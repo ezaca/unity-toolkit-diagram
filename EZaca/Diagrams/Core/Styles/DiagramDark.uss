@@ -1,0 +1,25 @@
+DiagramElement.dark {
+}
+
+.dark DiagramElement {
+    background-color: rgb(56, 56, 56);
+}
+
+.dark NodeElement {
+    background-color: rgb(56, 56, 56);
+    border-left-color: rgb(78, 78, 78);
+    border-right-color: rgb(78, 78, 78);
+    border-top-color: rgb(78, 78, 78);
+    border-bottom-color: rgb(78, 78, 78);
+}
+
+.dark NodeElement > #NodeHeader {
+    background-color: rgb(78, 78, 78);
+}
+
+.dark PortElement {
+    border-left-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-top-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+}

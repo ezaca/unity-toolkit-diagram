@@ -1,0 +1,21 @@
+DiagramElement.light, .light DiagramElement {
+}
+
+.light NodeElement {
+	background-color: rgb(200, 200, 200);
+	border-left-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-top-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+}
+
+.light NodeElement > #NodeHeader {
+    background-color: rgb(156, 156, 156);
+}
+
+.light PortElement {
+    border-left-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102);
+    border-top-color: rgb(102, 102, 102);
+    border-bottom-color: rgb(102, 102, 102);
+}
