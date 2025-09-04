@@ -1,0 +1,57 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramBaseStyle.uss?fileID=7433441132597879392&amp;guid=4b91f335889dbea4690eb00dd61fb866&amp;type=3#DiagramBaseStyle" />
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramDark.uss?fileID=7433441132597879392&amp;guid=e77b4752adf325947aef49604597ea59&amp;type=3#DiagramDark" />
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramLight.uss?fileID=7433441132597879392&amp;guid=c289f51f3c01fcb4981c54030da25eac&amp;type=3#DiagramLight" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center; flex-direction: row;">
+        <EZaca.Diagrams.DiagramElement style="width: 800px; height: 600px; background-color: rgb(156, 156, 156);">
+            <ui:Label text="Drag the connector of the value to the operations, operation to operation, and operation to result, to solve the equation." style="white-space: normal; padding-top: 10px; padding-right: 50px; padding-bottom: 10px; padding-left: 50px; background-color: rgb(192, 192, 192); border-left-color: rgb(128, 128, 128); border-right-color: rgb(128, 128, 128); border-top-color: rgb(128, 128, 128); border-bottom-color: rgb(128, 128, 128); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; font-size: 18px;" />
+            <EZaca.Diagrams.NodeElement title="Value" name="Value10" movable="true" style="top: 140px; left: 59px;">
+                <ui:Label text="10" style="font-size: 20px; -unity-text-align: middle-center; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <EZaca.Diagrams.PortElement direction="Output" name="Port" />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement title="Value" name="Value20" movable="true" style="top: 277px; left: 54px;">
+                <ui:Label text="20&#10;" style="font-size: 20px; -unity-text-align: middle-center; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <EZaca.Diagrams.PortElement direction="Output" name="Port" />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement title="Value" name="Value2" movable="true" style="top: 398px; left: 53px;">
+                <ui:Label text="2" style="font-size: 20px; -unity-text-align: middle-center; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <EZaca.Diagrams.PortElement direction="Output" name="Port" />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement title="Add" name="Add" movable="true" style="top: 200px; left: 299px;">
+                <ui:VisualElement>
+                    <EZaca.Diagrams.PortElement direction="Input" name="PortA" />
+                    <EZaca.Diagrams.PortElement direction="Input" name="PortB" />
+                </ui:VisualElement>
+                <ui:Label text="+" style="font-size: 25px; -unity-text-align: middle-center; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1; -unity-font-style: bold;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <EZaca.Diagrams.PortElement direction="Output" name="Port" />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement title="Multiply" name="Multiply" movable="true" style="top: 352px; left: 294px;">
+                <ui:VisualElement>
+                    <EZaca.Diagrams.PortElement direction="Input" name="PortA" />
+                    <EZaca.Diagrams.PortElement direction="Input" name="PortB" />
+                </ui:VisualElement>
+                <ui:Label text="*" style="font-size: 25px; -unity-text-align: middle-center; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1; -unity-font-style: bold;" />
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <EZaca.Diagrams.PortElement direction="Output" name="Port" />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement title="Result" name="Result" movable="true" style="top: 277px; left: 539px;">
+                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                    <EZaca.Diagrams.PortElement direction="Input" name="Port" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:Label text="Result should be" style="-unity-text-align: upper-center;" />
+                    <ui:Label text="240" name="FinalValue" style="font-size: 25px; -unity-text-align: middle-center; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1; -unity-font-style: bold; background-color: rgb(238, 221, 130);" />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+        </EZaca.Diagrams.DiagramElement>
+    </ui:VisualElement>
+</ui:UXML>

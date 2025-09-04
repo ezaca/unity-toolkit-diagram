@@ -1,0 +1,38 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramBaseStyle.uss?fileID=7433441132597879392&amp;guid=4b91f335889dbea4690eb00dd61fb866&amp;type=3#DiagramBaseStyle" />
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramLight.uss?fileID=7433441132597879392&amp;guid=c289f51f3c01fcb4981c54030da25eac&amp;type=3#DiagramLight" />
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramDark.uss?fileID=7433441132597879392&amp;guid=e77b4752adf325947aef49604597ea59&amp;type=3#DiagramDark" />
+    <ui:ScrollView name="ScrollView" style="flex-grow: 1;">
+        <EZaca.Diagrams.DiagramElement class="light" style="min-width: 1000px; min-height: 1000px;">
+            <EZaca.Diagrams.NodeElement title="Diagram" movable="true" style="top: 50px; left: 50px;">
+                <ui:VisualElement style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+                    <ui:Label text="Add a DiagramElement, then&#10;add any NodeElement and PortElement&#10;you want. Connect them by script&#10;accessing&#10;document.rootVisualElement.Q&lt;DiagramElement&gt;()" />
+                </ui:VisualElement>
+                <EZaca.Diagrams.PortElement name="PortA" direction="Output" class="PortElement" style="align-self: flex-end;" />
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement movable="true" style="top: 273px; left: 51px;">
+                <EZaca.Diagrams.PortElement name="PortB" direction="Input" class="PortElement" style="align-self: flex-start; margin-top: -25px;" />
+                <ui:VisualElement style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+                    <ui:Label text="The node body is your sandbox&#10;to add any element you want." />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1;">
+                    <EZaca.Diagrams.PortElement name="PortC" direction="Output" class="PortElement" />
+                    <EZaca.Diagrams.PortElement name="PortD" direction="Output" class="PortElement" />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement title="Flexibility" movable="true" style="top: 405px; left: 357px;">
+                <EZaca.Diagrams.PortElement name="PortE" direction="Input" class="PortElement" />
+                <ui:VisualElement style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+                    <ui:Label text="You can use this diagram for games and editors." />
+                </ui:VisualElement>
+                <EZaca.Diagrams.PortElement name="PortF" direction="Output" class="PortElement" style="align-self: flex-start;" />
+            </EZaca.Diagrams.NodeElement>
+            <EZaca.Diagrams.NodeElement title="Flexibility" movable="true" style="top: 250px; left: 500px;">
+                <EZaca.Diagrams.PortElement name="PortG" direction="Input" class="PortElement" style="align-self: flex-end;" />
+                <ui:VisualElement style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+                    <ui:Label text="Some simples extra code allow&#10;to drag nodes and other features." />
+                </ui:VisualElement>
+            </EZaca.Diagrams.NodeElement>
+        </EZaca.Diagrams.DiagramElement>
+    </ui:ScrollView>
+</ui:UXML>
