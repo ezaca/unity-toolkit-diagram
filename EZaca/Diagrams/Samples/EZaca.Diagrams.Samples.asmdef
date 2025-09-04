@@ -1,0 +1,16 @@
+{
+    "name": "EZaca.Diagrams.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:93ac36cc608587f429907b280eb4b933"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
