@@ -7,10 +7,10 @@ Base components for building graphs/diagrams, similar to those found in visual s
 ## Showcase
 
 ![Screenshot of a simple diagram with nodes and connections.](EZaca/Docs~/Images/Sample1.png)
+![Screenshot of the first sample diagram, but using dark mode.](EZaca/Docs~/Images/Sample1Dark.png)
 ![Screenshot of a small game to connect nodes and resolve a mathematical expression.](EZaca/Docs~/Images/Sample2.png)
 ![Screenshot with the connected solution of the small game to connect nodes and resolve the mathematical expression where 10 plus 2, times 20 is equal to 240.](EZaca/Docs~/Images/Sample2Connected.png)
 ![Screenshot of a fully customized diagram style, using a custom stylesheet.](EZaca/Docs~/Images/CustomDiagram.png)
-![Screenshot of the first sample diagram, but using dark mode.](EZaca/Docs~/Images/Sample1Dark.png)
 
 ## Get Started
 
