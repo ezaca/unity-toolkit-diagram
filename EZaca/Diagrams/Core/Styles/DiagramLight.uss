@@ -1,9 +1,14 @@
-DiagramElement.light, .light DiagramElement {
+DiagramElement.light {
+    background-color: rgb(182, 182, 182);
+}
+
+.light DiagramElement {
+    background-color: rgb(182, 182, 182);
 }
 
 .light NodeElement {
-	background-color: rgb(200, 200, 200);
-	border-left-color: rgb(102, 102, 102);
+    background-color: rgb(200, 200, 200);
+    border-left-color: rgb(102, 102, 102);
     border-right-color: rgb(102, 102, 102);
     border-top-color: rgb(102, 102, 102);
     border-bottom-color: rgb(102, 102, 102);

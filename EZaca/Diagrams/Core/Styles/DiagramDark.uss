@@ -1,8 +1,10 @@
 DiagramElement.dark {
+    background-color: rgb(56, 56, 56);
 }
 
 .dark DiagramElement {
     background-color: rgb(56, 56, 56);
+    color: rgb(210, 210, 210);
 }
 
 .dark NodeElement {
@@ -11,6 +13,7 @@ DiagramElement.dark {
     border-right-color: rgb(78, 78, 78);
     border-top-color: rgb(78, 78, 78);
     border-bottom-color: rgb(78, 78, 78);
+    color: rgb(210, 210, 210);
 }
 
 .dark NodeElement > #NodeHeader {
