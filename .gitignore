@@ -2,6 +2,8 @@
 
 **/*.ignore/
 **/*.ignore.meta
+/TextMesh\ Pro/
+/TextMesh\ Pro.meta
 
 # This .gitignore file should be placed at the root of your Unity project directory
 #
