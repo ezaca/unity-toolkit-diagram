@@ -5,6 +5,9 @@ namespace EZaca.Diagrams
 {
     public class MoveNodeManipulator : DragManipulator
     {
+        public bool forcePositionAbsolute = true;
+        public bool bringToFront = true;
+
         public static MoveNodeManipulator AttachManipulator(NodeElement node)
             => AttachManipulator(node.headerContainer, new MoveNodeManipulator(node));
 
@@ -25,6 +28,12 @@ namespace EZaca.Diagrams
             return true;
         }
 
+        protected override void OnStartDrag(PointerDownEvent evt)
+        {
+            if (bringToFront)
+                node.BringToFront();
+        }
+
         protected override void OnDragMove(PointerMoveEvent evt)
         {
             Vector2 oldPosition = default;
@@ -34,6 +43,9 @@ namespace EZaca.Diagrams
 
             if (node is not null)
                 oldPosition = node.localBound.position;
+
+            if (forcePositionAbsolute)
+                node.style.position = Position.Absolute;
 
             node.style.left = newPosition.x;
             node.style.top = newPosition.y;
