@@ -1,0 +1,17 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/EZaca/Diagrams/Samples/2.%20Get%20Started%20For%20Editor/Diagram_GetStartedForEditor.uss?fileID=7433441132597879392&amp;guid=9ecebc6d3fa57434cb3c5d67cc5252a1&amp;type=3#Diagram_GetStartedForEditor" />
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramBaseStyle.uss?fileID=7433441132597879392&amp;guid=4b91f335889dbea4690eb00dd61fb866&amp;type=3#DiagramBaseStyle" />
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramLight.uss?fileID=7433441132597879392&amp;guid=c289f51f3c01fcb4981c54030da25eac&amp;type=3#DiagramLight" />
+    <Style src="project://database/Assets/EZaca/Diagrams/Core/Styles/DiagramDark.uss?fileID=7433441132597879392&amp;guid=e77b4752adf325947aef49604597ea59&amp;type=3#DiagramDark" />
+    <EZaca.Diagrams.DiagramElement style="flex-grow: 1;">
+        <EZaca.Diagrams.NodeElement title="Node A" style="top: 91px; left: 33px; width: 90px; min-width: 90px;">
+            <EZaca.Diagrams.PortElement />
+        </EZaca.Diagrams.NodeElement>
+        <EZaca.Diagrams.NodeElement title="Node B" style="top: 218px; left: 113px; width: 90px; min-width: 90px;">
+            <EZaca.Diagrams.PortElement />
+        </EZaca.Diagrams.NodeElement>
+        <EZaca.Diagrams.NodeElement title="Node C" style="top: 100px; left: 205px; width: 90px; min-width: 90px;">
+            <EZaca.Diagrams.PortElement />
+        </EZaca.Diagrams.NodeElement>
+    </EZaca.Diagrams.DiagramElement>
+</ui:UXML>

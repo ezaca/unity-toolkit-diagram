@@ -1,0 +1,3 @@
+NodeElement > #NodeBody {
+    justify-content: center;
+}
