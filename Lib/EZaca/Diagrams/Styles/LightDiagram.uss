@@ -1,0 +1,50 @@
+.ez.diagram {
+    background-color: rgb(165, 165, 165);
+    flex-grow: 1;
+}
+
+.ez.diagram-port {
+    position: absolute;
+    border-left-color: rgb(155, 155, 155);
+    border-right-color: rgb(155, 155, 155);
+    border-top-color: rgb(155, 155, 155);
+    border-bottom-color: rgb(155, 155, 155);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    width: 15px;
+    height: 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: rgb(240, 240, 240);
+}
+
+.ez.diagram-node {
+    position: absolute;
+    min-width: 100px;
+    min-height: 50px;
+    background-color: rgb(200, 200, 200);
+    border-left-color: rgb(153, 153, 153);
+    border-right-color: rgb(153, 153, 153);
+    border-top-color: rgb(153, 153, 153);
+    border-bottom-color: rgb(153, 153, 153);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.ez.diagram-node .ez.diagram-port {
+    position: relative;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}

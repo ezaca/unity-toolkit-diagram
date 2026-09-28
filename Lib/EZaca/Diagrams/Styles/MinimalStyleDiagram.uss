@@ -1,0 +1,25 @@
+.ez.diagram {
+    flex-grow: 1;
+}
+
+.ez.diagram-port {
+    position: absolute;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    width: 15px;
+    height: 15px;
+}
+
+.ez.diagram-node {
+    position: absolute;
+}
+
+.ez.diagram-node .ez.diagram-port {
+    position: relative;
+}
