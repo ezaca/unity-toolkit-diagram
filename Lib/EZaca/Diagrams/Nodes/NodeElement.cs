@@ -1,8 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine.UIElements;
 
 namespace EZaca.Diagrams
 {
-    [UxmlElement("Node", libraryPath = "EZaca.Diagrams")]
+    [UxmlElement(libraryPath = "EZaca.Diagrams")]
     public partial class NodeElement : VisualElement
     {
         [UxmlAttribute]
@@ -37,6 +38,16 @@ namespace EZaca.Diagrams
         private void UpdateDiagram()
         {
             GetFirstAncestorOfType<DiagramElement>().RepaintConnections();
+        }
+
+        public DiagramElement FindParentDiagram()
+        {
+            return GetFirstAncestorOfType<DiagramElement>();
+        }
+
+        public IEnumerable<PortElement> FindChildrenPorts()
+        {
+            return this.Query<PortElement>().Build();
         }
     }
 }

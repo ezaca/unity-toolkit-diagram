@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 namespace EZaca.Diagrams
 {
-    [UxmlElement("Diagram", libraryPath = "EZaca.Diagrams")]
+    [UxmlElement(libraryPath = "EZaca.Diagrams")]
     public partial class DiagramElement : VisualElement
     {
         public event Action<DiagramConnection> ConnectionAdded;
@@ -54,16 +54,6 @@ namespace EZaca.Diagrams
         }
 
         /// <summary>
-        /// Remove all the connections from and to an element.
-        /// </summary>
-        public void RemoveConnections(VisualElement element)
-        {
-            RemoveConnections(item =>
-                item.Start == element ||
-                item.End == element);
-        }
-
-        /// <summary>
         /// Remove all the connections matching a criteria.
         /// </summary>
         public void RemoveConnections(Predicate<DiagramConnection> condition)
@@ -78,6 +68,16 @@ namespace EZaca.Diagrams
             }
 
             connections.RemoveAll(condition);
+        }
+
+        public DiagramConnection FindConnection(Predicate<DiagramConnection> predicate)
+        {
+            foreach (DiagramConnection connection in connections)
+            {
+                if (predicate(connection))
+                    return connection;
+            }
+            return null;
         }
 
         /// <summary>
@@ -95,37 +95,6 @@ namespace EZaca.Diagrams
             {
                 connection.Paint(context);
             }
-        }
-
-        /// <summary>
-        /// Start a connection preview from a pointer down event.
-        /// </summary>
-        public Connectable StartConnectionPreview(
-            PointerDownEvent pointerDownEvent,
-            Func<VisualElement, VisualElement, DiagramConnection> makeConnection)
-        {
-            return StartConnectionPreview(
-                (VisualElement)pointerDownEvent.target,
-                pointerDownEvent.pointerId,
-                pointerDownEvent.position,
-                makeConnection);
-        }
-
-        /// <summary>
-        /// Start a connection preview from the center of an element. You may
-        /// pass a pointer Id to automatically link the manipulator with a
-        /// pointer, otherwise you must control it manually.
-        /// </summary>
-        public Connectable StartConnectionPreview(
-            VisualElement from,
-            int pointerId,
-            Func<VisualElement, VisualElement, DiagramConnection> makeConnection)
-        {
-            return StartConnectionPreview(
-                from,
-                pointerId,
-                from.worldBound.center,
-                makeConnection);
         }
 
         /// <summary>

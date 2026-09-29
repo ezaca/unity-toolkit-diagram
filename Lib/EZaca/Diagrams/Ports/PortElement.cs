@@ -9,7 +9,7 @@ namespace EZaca.Diagrams
     /// <summary>
     /// A diagram node port that can be connected to other ports.
     /// </summary>
-    [UxmlElement("Port", libraryPath = "EZaca.Diagrams")]
+    [UxmlElement(libraryPath = "EZaca.Diagrams")]
     public partial class PortElement : VisualElement
     {
         [Tooltip("Options to allow auto-connect ports")]
@@ -66,7 +66,7 @@ namespace EZaca.Diagrams
             if (!Options.HasFlag(PortOptions.AllowDragConnections))
                 return;
 
-            DiagramElement diagram = FindDiagram();
+            DiagramElement diagram = FindParentDiagram();
 
             if (diagram is null)
             {
@@ -87,7 +87,7 @@ namespace EZaca.Diagrams
 
         private void ConfirmConnection(Vector2 previewLocalPosition, PointerUpEvent pointerUp)
         {
-            DiagramElement diagram = FindDiagram();
+            DiagramElement diagram = FindParentDiagram();
 
             pickedElements ??= new();
             pickedElements.Clear();
@@ -112,7 +112,12 @@ namespace EZaca.Diagrams
             Connected?.Invoke(connection);
         }
 
-        private DiagramElement FindDiagram()
+        public NodeElement FindParentNode()
+        {
+            return GetFirstAncestorOfType<NodeElement>();
+        }
+
+        public DiagramElement FindParentDiagram()
         {
             return GetFirstAncestorOfType<DiagramElement>();
         }
