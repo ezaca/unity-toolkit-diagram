@@ -1,0 +1,26 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" authoring-id="-1478898678" editor-extension-mode="False">
+    <ui:VisualElement style="flex-direction: row; background-color: rgb(178, 178, 178);">
+        <ui:Button text="Previous" name="Previous" authoring-id="-641153610"/>
+        <ui:DropdownField label="" name="StyleDropdown" choices="Custom&lt;br&gt;&lt;size=10&gt;A playful theme made for this sample.&lt;/size&gt;,Dark Theme &lt;br&gt;&lt;size=10&gt;Matches the Unity Editor Dark Theme.&lt;/size&gt;,Light Theme &lt;br&gt;&lt;size=10&gt;Matches the Unity Editor Light Theme.&lt;/size&gt;,Black &amp; White&lt;br&gt;&lt;size=10&gt;A crude black &amp; white theme.&lt;/size&gt;,Minimal&lt;br&gt;&lt;size=10&gt;This theme has almost no styling%2C copy it to start styling from scratch.&lt;/size&gt;,None&lt;br&gt;&lt;size=10&gt;No stylesheet.&lt;/size&gt;" index="0" authoring-id="-82001851" style="flex-grow: 1;"/>
+        <ui:Button text="Next" name="Next" authoring-id="-641153548"/>
+    </ui:VisualElement>
+    <EZaca.Diagrams.DiagramElement authoring-id="-1944239030" style="flex-grow: 1;">
+        <EZaca.Diagrams.NodeElement name="Node1" style="top: 85px; left: 120px; align-items: center; justify-content: flex-end;">
+            <ui:Label text="Water"/>
+            <EZaca.Diagrams.PortElement authoring-id="-72543031" name="Port1"/>
+        </EZaca.Diagrams.NodeElement>
+        <EZaca.Diagrams.NodeElement name="Node2" style="top: 85px; left: 360px; align-items: center; justify-content: flex-start;">
+            <EZaca.Diagrams.PortElement authoring-id="-71619541" name="Port2"/>
+            <ui:Label text="Earth"/>
+        </EZaca.Diagrams.NodeElement>
+        <EZaca.Diagrams.NodeElement name="Node3" style="top: 250px; left: 120px; align-items: center; justify-content: flex-end;">
+            <ui:Label text="Air"/>
+            <EZaca.Diagrams.PortElement name="Port3" authoring-id="-70695989"/>
+        </EZaca.Diagrams.NodeElement>
+        <EZaca.Diagrams.NodeElement name="Node4" style="top: 250px; left: 360px; align-items: center; justify-content: flex-start;">
+            <EZaca.Diagrams.PortElement name="Port4" authoring-id="-69772499"/>
+            <ui:Label text="Fire"/>
+        </EZaca.Diagrams.NodeElement>
+        <EZaca.Diagrams.PortElement authoring-id="28566631" name="FloatingPort" style="top: 195px; left: 308px;"/>
+    </EZaca.Diagrams.DiagramElement>
+</ui:UXML>

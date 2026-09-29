@@ -1,0 +1,72 @@
+DiagramElement {
+    flex-grow: 1;
+    background-color: rgb(229, 229, 229);
+}
+
+PortElement {
+    position: absolute;
+    border-left-color: rgba(0, 0, 0, 0.502);
+    border-right-color: rgba(0, 0, 0, 0.502);
+    border-top-color: rgba(0, 0, 0, 0.502);
+    border-bottom-color: rgba(0, 0, 0, 0.502);
+    border-top-width: 3px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.251);
+}
+
+NodeElement {
+    position: absolute;
+    min-width: 150px;
+    min-height: 75px;
+    border-left-color: rgba(0, 0, 0, 0.251);
+    border-right-color: rgba(26, 26, 26, 0.502);
+    border-top-color: rgba(0, 0, 0, 0.251);
+    border-bottom-color: rgba(26, 26, 26, 0.502);
+    border-top-width: 3px;
+    border-right-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: 3px;
+    align-self: center;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    flex-direction: row;
+    color: rgba(27, 27, 27, 0.698);
+    -unity-font-style: bold;
+    font-size: 16px;
+}
+
+NodeElement PortElement {
+    position: relative;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+NodeElement#Node1 {
+    background-color: rgb(0, 191, 255);
+    border-top-left-radius: 20px;
+}
+
+NodeElement#Node2 {
+    background-color: rgb(205, 133, 63);
+    border-top-right-radius: 20px;
+}
+
+NodeElement#Node3 {
+    background-color: rgb(255, 235, 205);
+    border-bottom-left-radius: 20px;
+}
+
+NodeElement#Node4 {
+    background-color: rgb(255, 99, 71);
+    border-bottom-right-radius: 20px;
+}
